@@ -1,0 +1,21 @@
+
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+	<edmx:Reference Uri="/sap/opu/odata/sap/ZYEGE_01_SRV/$metadata">
+		<edmx:Include Alias="Metadata" Namespace="ZYEGE_01_SRV"/>
+	</edmx:Reference>
+	<edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2">
+		<edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+	</edmx:Reference>
+	<edmx:DataServices>
+		<Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="app.ZZMASRAF_02.Annotations.annotation0.ZYEGE_01_SRV">
+			<Annotations Target="Metadata.Detail">
+				<Annotation Term="UI.SelectionFields">
+					<Collection>
+						<PropertyPath>Requestid</PropertyPath>
+						<PropertyPath>Uname</PropertyPath>
+					</Collection>
+				</Annotation>
+			</Annotations>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
